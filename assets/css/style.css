@@ -1,3 +1,14 @@
+.custom-navbar {
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.custom-navbar.scrolled {
+    background-color: #99BE8A;
+    /* solid blue */
+    backdrop-filter: blur(10px);
+}
+
 html,
 body {
     overscroll-behavior: none;
@@ -5,11 +16,17 @@ body {
 
 body {
     background-color: #EDF1E4;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .navbar-brand img {
     max-width: 7rem;
     max-height: 7rem;
+}
+
+.nav-item a{
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .custom-navbar {
@@ -21,13 +38,18 @@ body {
     /* Above other content */
 }
 
-/* Blurred and colored state when scrolled */
-.custom-navbar.scrolled {
-    background-color: rgba(255, 255, 255, 0.8);
-    /* Semi-transparent white */
-    backdrop-filter: blur(10px);
-    /* Frosted-glass blur */
+/* .nav-text{
+    display: flex;
+    justify-content: center;
+} */
+
+.svg-btn svg {
+    stroke: #000000;
+    /* custom color */
 }
+
+/* Blurred and colored state when scrolled */
+/* Only one .custom-navbar.scrolled rule should exist above */
 
 .hero-section {
     width: 100vw;
@@ -86,6 +108,11 @@ body {
     padding-bottom: 4rem;
 }
 
+.filter-section h2{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .filter-section button {
     background-color: #2ecc71;
     /* Emerald Green */
@@ -101,6 +128,11 @@ body {
     padding-bottom: 4rem;
     display: block;
     text-align: center;
+}
+
+.why-us h2{
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .why-us .content {
@@ -120,6 +152,16 @@ body {
     padding-bottom: 4rem;
 }
 
+.faq h2{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.faq h5{
+    font-weight: bolder;
+
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -137,10 +179,43 @@ body {
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     background-color: #99BE8A;
     padding: 2rem 1rem 5rem 1rem;
     align-items: center;
     justify-content: space-between;
+}
+
+.footer-item {
+    flex: 1 1 20%;
+
+}
+
+.footer a{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.footer-right-items {
+    display: flex;
+    justify-content: end;
+}
+
+.footer-right-items svg {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.footer-center-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-sub-item {
+    flex: 1 1 75%;
+    text-align: center;
 }
 
 .footer-brand img {
@@ -148,16 +223,16 @@ body {
     max-height: 7rem;
 }
 
-.footer-sub-links{
+.footer-sub-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
     flex: wrap;
 }
-  
+
 .footer-sub-links a {
-  text-decoration: none !important;
-  color: black;
+    text-decoration: none !important;
+    color: black;
 }
 
 @media (max-width: 768px) {
@@ -190,5 +265,11 @@ body {
 
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-right-items {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
     }
 }
