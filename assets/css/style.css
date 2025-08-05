@@ -15,7 +15,8 @@ body {
 }
 
 body {
-    background-color: #EDF1E4;
+    padding-top: 130px;
+    background-color: #EDF1E4 !important;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -24,7 +25,7 @@ body {
     max-height: 7rem;
 }
 
-.nav-item a{
+.nav-item a {
     font-weight: bold;
     font-size: 1.1rem;
 }
@@ -108,7 +109,7 @@ body {
     padding-bottom: 4rem;
 }
 
-.filter-section h2{
+.filter-section h2 {
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -130,7 +131,7 @@ body {
     text-align: center;
 }
 
-.why-us h2{
+.why-us h2 {
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -152,12 +153,12 @@ body {
     padding-bottom: 4rem;
 }
 
-.faq h2{
+.faq h2 {
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.faq h5{
+.faq h5 {
     font-weight: bolder;
 
 }
@@ -177,6 +178,26 @@ body {
     border-radius: 0.25rem;
 }
 
+/* .card-middle-content img {
+    width: 20px;
+    height: 20px;
+} */
+
+.card .btn {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  width: 100px;
+}
+
+.card-img-top{
+    width: 75%
+}
+
+.card{
+    height: 370px;
+}
+
 .footer {
     display: flex;
     flex-wrap: wrap;
@@ -191,7 +212,7 @@ body {
 
 }
 
-.footer a{
+.footer a {
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -235,6 +256,55 @@ body {
     color: black;
 }
 
+/* @media (max-width: 810px) {
+  html {
+    font-size: 14px;
+  }
+
+  .navbar-brand img {
+    max-width: 5rem;
+    max-height: 5rem;
+  }
+
+  .footer-brand img {
+    max-width: 5rem;
+    max-height: 5rem;
+  }
+
+  .hero-text {
+    width: 90%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card {
+    width: auto;
+    height: auto;
+  }
+
+  .card img {
+    width: auto;
+    height: auto;
+  }
+
+  .footer-right-items {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+  }
+} */
+
+
 @media (max-width: 768px) {
     html {
         font-size: 14px;
@@ -266,6 +336,30 @@ body {
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .card {
+        width: auto;
+        height: 350px;
+    }
+
+    .card img {
+        width: auto;
+        height: auto;
+    }
+
+    /* .card-middle-content{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-middle-content p{
+        di
+    } */
+
+    /* .card-middle-content img {
+        width: 20px;
+        height: 20px;
+    } */
 
     .footer-right-items {
         display: flex;
