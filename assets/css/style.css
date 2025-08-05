@@ -25,6 +25,10 @@ body {
     max-height: 7rem;
 }
 
+.navbar-nav {
+  padding-right: 3rem !important;
+}
+
 .nav-item a {
     font-weight: bold;
     font-size: 1.1rem;
@@ -79,10 +83,11 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: #2ecc71;
     margin-top: -30px;
 }
+
+
 
 .hero-text h1 {
     font-size: 3rem;
@@ -153,11 +158,23 @@ body {
     padding-bottom: 4rem;
 }
 
-.faq h2 {
+.faq h2,
+.contact-form-text h2 {
     font-weight: bold;
     text-transform: uppercase;
 }
 
+.contact-form button{
+    background-color: #2ecc71;
+    /* Emerald Green */
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 25%;
+    height: 100%;
+}
+
+.why-us h5,
 .faq h5 {
     font-weight: bolder;
 
@@ -184,18 +201,36 @@ body {
 } */
 
 .card .btn {
-  background-color: #2ecc71;
-  color: #fff;
-  border: none;
-  width: 100px;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    width: 100px;
 }
 
-.card-img-top{
-    width: 75%
-}
-
-.card{
+.card {
     height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+
+.contact-form-text {
+    width: 50%;
+    height: auto;
+}
+
+.contact-form {
+    width: 50%;
+    height: auto;
 }
 
 .footer {
@@ -342,10 +377,17 @@ body {
         height: 350px;
     }
 
-    .card img {
-        width: auto;
+    .contact-form-text {
+        width: 100%;
         height: auto;
     }
+
+    .contact-form {
+        width: 100%;
+        height: auto;
+    }
+
+    /* .card-img-top centering is handled above for all screen sizes */
 
     /* .card-middle-content{
         display: flex;
