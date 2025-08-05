@@ -8,11 +8,9 @@
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>EV-Rental</title>
-
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
             <div class="container-fluid">
@@ -26,15 +24,15 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
                     <div class="d-flex w-100 align-items-center">
                         <div class="flex-grow-1 d-flex justify-content-center">
-                            <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                            <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll pe-5" style="--bs-scroll-height: 100px;">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="index.html">HOME</a>
+                                    <a class="nav-link" href="index.html">HOME</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="vehicle.html">VEHICLES</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">CONTACT</a>
+                                    <a class="nav-link active" href="contact.html">CONTACT</a>
                                 </li>
                             </ul>
                         </div>
@@ -52,92 +50,37 @@
             </div>
         </nav>
     </header>
-
-    <section class="hero-section">
-        <img src="assets/images/vehicles_collection.png" alt="Full-screen Image">
-        <div class="hero-text">
-            <h1>Reliable Cars. Transparent Pricing. Total Freedom.</h1>
-            <p>wherever you're headed, we’ve got the keys to your journey.</p>
+    <section class="contact-section container d-flex flex-column flex-lg-row justify-content-center gap-5 mb-5">
+        <div class="contact-form-text col-12 col-sm-12 col-md-12 col-lg-6 mb-4">
+            <h2>We're Here to Help</h2>
+            <p>Need help choosing the right vehicle? Have questions about your booking? We're here to help. Whether
+                you're planning a weekend getaway, a business trip, or just need a reliable ride around town, our team
+                is ready to assist you with fast, friendly support. Reach out to us for inquiries about vehicle
+                availability, pricing, pickup/drop-off locations, or anything else related to your rental experience.
+            </p>
         </div>
-    </section>
-    <section class="filter-section">
-        <div class="container">
+        <div class="contact-form col-12 col-sm-12 col-md-12 col-lg-6 mb-4">
             <form>
-                <div class="row g-3">
-                    <h2>Filter Section</h2>
-                    <div class="col-md-3 col-12">
-                        <input type="text" class="form-control" placeholder="Vehilce Type(eg : car,van,cab)">
-                    </div>
-                    <div class="col-md-3 col-12">
-                        <input type="text" class="form-control" placeholder="Pick Up Location">
-                    </div>
-                    <div class="col-md-3 col-12">
-                        <input type="text" class="form-control" placeholder="Drop Off Location">
-                    </div>
-                    <div class="col-md-3 col-12">
-                        <button>Search</button>
-                    </div>
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">Name</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
                 </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your phone number with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">Description</label>
+                    <input type="text" class="form-control" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-        </div>
-    </section>
-    <section class="why-us ">
-        <div class="title">
-            <h2>Why Choose Us?</h2>
-        </div>
-        <div class="content container pt-3">
-            <div class="item">
-                <h5>💸Save on Fuel Costs</h5>
-                <p>Charging an EV costs significantly less than fueling a gas car. Enjoy predictable travel budgets and
-                    lower total trip expenses.</p>
-            </div>
-            <div class="item">
-                <h5>🌱Eco-Friendly Travel</h5>
-                <p>Reduce your carbon footprint with every mile. Our EVs produce zero tailpipe emissions, helping you
-                    travel responsibly without sacrificing style or convenience.</p>
-            </div>
-            <div class="item">
-                <h5>🏆Trusted by Thousands</h5>
-                <p>Our customers love the convenience, cleanliness, and reliability of our EVs. Join a growing community
-                    of smart, sustainable drivers.</p>
-            </div>
-
-        </div>
-    </section>
-    <section class="faq container">
-        <h2>FAQ</h2>
-        <div class="grid-container">
-            <div class="grid-item">
-                <h5>🕒 1. How long can I rent a vehicle?</h5>
-                <p>You can rent a vehicle for as little as a few hours or as long as several weeks. Flexible rental
-                    durations are available to suit your travel needs.</p>
-            </div>
-            <div class="grid-item">
-                <h5>🪪 2. What documents do I need to rent a car?</h5>
-                <p>You’ll need a valid driver’s license, a government-issued ID or passport, and a credit/debit card
-                    for payment and security deposit.</p>
-            </div>
-            <div class="grid-item">
-                <h5>💳 3. Is there a security deposit?</h5>
-                <p>Yes, a refundable security deposit is required at the time of pickup. The amount depends on the
-                    vehicle type and rental duration.</p>
-            </div>
-            <div class="grid-item">
-                <h5>🛣️ 4. Are there mileage limits?</h5>
-                <p>Most rentals come with a daily mileage limit. Unlimited mileage options are available for select
-                    vehicles and longer rentals.</p>
-            </div>
-            <div class="grid-item">
-                <h5>🔋 5. Do I need to recharge the EV before returning it?</h5>
-                <p>Yes, please return the EV with a similar battery charge level as when you picked it up. If the charge
-                    is significantly lower, a recharging fee may apply to cover electricity costs and turnaround time.
-                </p>
-            </div>
-            <div class="grid-item">
-                <h5>🧼 6. Are the vehicles cleaned before each rental?</h5>
-                <p>Absolutely. All vehicles are thoroughly cleaned and sanitized before every rental to ensure your
-                    safety and comfort.</p>
-            </div>
         </div>
     </section>
     <footer class="footer">
